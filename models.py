@@ -20,7 +20,6 @@ class Tag(BaseModelExtra):
 
 
 class SearchResponse(BaseModelExtra):
-    """Список идентификаторов произведений, найденных поиском."""
 
     total: int
     objectIDs: list[int] = Field(default_factory=list)
@@ -32,7 +31,6 @@ class SearchResponse(BaseModelExtra):
 
 
 class ObjectResponse(BaseModelExtra):
-    """Произведение искусства из коллекции Met Museum."""
 
     objectID: int
     title: str | None = None
